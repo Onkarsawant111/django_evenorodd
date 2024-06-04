@@ -1,4 +1,7 @@
 <form action="" method="post">
+    {% if error %}
+    <h3 style="background-color: red;">Please enter value</h3>
+    {% endif %}  
     {% csrf_token %}
     Num : <input type="text" value="" name="num">
     <br><br>
